@@ -1,3 +1,4 @@
 # aGoodRepoSE
 This is an Assignment Repo for SE CSC 510
-https://img.shields.io/apm/l/vim-mode
+
+![GitHub](https://img.shields.io/github/license/sankettangade/aGoodRepoSE)
