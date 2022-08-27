@@ -1,7 +1,7 @@
 ## aGoodRepoSE
 ![A_Good_Repo_SE_🤖_](https://user-images.githubusercontent.com/48486470/186971272-9c6b0428-8b26-4a5d-8091-736dca948b8c.png)
 
-This is an Assignment Repo for SE CSC 510
+This is an Assignment Repository for SE CSC 510 Course.
 
 ![GitHub](https://img.shields.io/github/license/sankettangade/aGoodRepoSE)
 ![GitHub contributors](https://img.shields.io/github/contributors/sankettangade/aGoodRepoSE)
@@ -9,11 +9,16 @@ This is an Assignment Repo for SE CSC 510
 ![AppVeyor](https://img.shields.io/appveyor/build/sankettangade/aGoodRepoSE)
 
 
-This is a script for Calculator which takes two numbers and an oprator as an input and returns the correct value of expression.
+This is a python script for Calculator which takes two numbers and an operator as an input and returns the correct value of expression as the output.
 
 ### Pre-requisites
-You will require Python installed on your PC to run this Project. Please visit [I'm an inline-style link](https://www.python.org/downloads/) to download the lastest python version.
+To run these scripts, you will require Python installed on your PC. Please visit [Python Installers](https://www.python.org/downloads/) to download the lastest python version.
 
 ### Installation
+Initially you can check whether your system has python pre-installed or not, usually nowadays in most of the systems, be it Windows or MacOS, python is pre-installed. 
+
+To check whether you have python installed or not, you can open CMD or a Terminal and run the command "python --version". If the CMD shows the version such as Python 3.6.7 then your system already has python installed and you just need to clone the repository and run the python scripts. 
+
+If this is not the case, then you need to download python installer package from [Python Installers](https://www.python.org/downloads/) based on your system's operating system and install it and you can further clone this repository to execute the scripts.
 
 ### Contribution Code of Conduct
