@@ -1,4 +1,4 @@
-class Operations
+class Operations:
 	def calculator(swi, n1, n2):
 		if swi == 1:
 			return (n1+n2)
