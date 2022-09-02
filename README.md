@@ -6,7 +6,7 @@ This is an Assignment Repository for SE CSC 510 Course.
 ![GitHub](https://img.shields.io/github/license/sankettangade/aGoodRepoSE)
 ![GitHub contributors](https://img.shields.io/github/contributors/sankettangade/aGoodRepoSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sankettangade/aGoodRepoSE)
-![AppVeyor](https://img.shields.io/appveyor/build/sankettangade/aGoodRepoSE)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sankettangade/aGoodRepoSE/Python%20application)
 
 
 This is a python script for Calculator which takes two numbers and an operator as an input and returns the correct value of expression as the output.
