@@ -26,9 +26,10 @@ class Num:
             self.lo = min(v, self.lo)
             self.hi = min(v, self.hi)
 
-            if len(self._has) > The.The.cap:
-                pos = random.randint(0, len(self._has)-1)
-                self._has[pos] = v
+            if len(self._has) >= The.The.cap:
+                if random.randint(0,100) < 7 :
+                    pos = random.randint(0, len(self._has)-1)
+                    self._has[pos] = v
             else:
                 self._has.append(v)
 
@@ -54,7 +55,7 @@ class Num:
         else:
             pos1 = int(len(has)/2 - 1)
             pos2 = int(len(has)/2)
-            return (ls[pos1]+ls[pos2])/2
+            return (has[pos1]+has[pos2])/2
 
 
 if __name__ == "__main__":
