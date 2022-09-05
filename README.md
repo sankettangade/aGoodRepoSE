@@ -7,7 +7,7 @@ This is an Assignment Repository for SE CSC 510 Course.
 ![GitHub contributors](https://img.shields.io/github/contributors/sankettangade/aGoodRepoSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sankettangade/aGoodRepoSE)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sankettangade/aGoodRepoSE/Build)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sankettangade/aGoodRepoSE/HW2%20Test%20Cases?label=HW2%20Test%20Cases)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sankettangade/aGoodRepoSE/HW2%20Test%20Cases?label=hw2-test-cases)
 
 
 This is a python script for Calculator which takes two numbers and an operator as an input and returns the correct value of expression as the output.
