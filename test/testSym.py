@@ -8,7 +8,7 @@ import Sym
 
 class TestSym(unittest.TestCase):
 
-    def test_sym(self):
+    def testSym(self):
         str = "aaaabbc"
         sym = Sym.Sym(0, "symbols")
         for i, x in enumerate(str):
@@ -18,5 +18,8 @@ class TestSym(unittest.TestCase):
         entropy = (1000*entropy//1)/1000
         print(" Mode =", mode)
         print("Entropy =", entropy)
-        assert mode == "a"
-        assert (1.38 >= entropy >= 1.37)
+        self.assertEqual(mode, "a", "Should be a")
+        self.assertTrue(1.38 >= entropy >= 1.37)
+
+if __name__ == '__main__':
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)

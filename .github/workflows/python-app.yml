@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "lua" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "lua" ]
 
 permissions:
   contents: read
@@ -37,3 +37,15 @@ jobs:
     - name: Test with unittest
       run: |
         python ./test/test.py
+
+    - name: HW2 - Testing Sym
+      run: |
+        python ./test/testSym.py
+
+    - name: Hw2 - Testing Num
+      run: |
+        python ./test/testNum.py
+      
+    - name: Hw2 - Testing BigNum
+      run: |
+        python ./test/testBigNum.py

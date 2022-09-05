@@ -9,7 +9,7 @@ import The
 
 class TestBigNum(unittest.TestCase):
     
-    def test_big_num(self):
+    def testBigNum(self):
         num = Num.Num(0, "Numbers")
         The.The.cap = 32
 
@@ -17,4 +17,10 @@ class TestBigNum(unittest.TestCase):
             num.add(i)
         print(num.nums())
         print(len(num.nums()))
-        assert len(num.nums())==32
+        self.assertEqual(len(num.nums()),32,"Should be 32")
+
+
+if __name__ == '__main__':
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+
+    

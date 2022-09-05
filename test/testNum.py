@@ -22,4 +22,7 @@ class TestNum(unittest.TestCase):
         print("div =", div)
 
         #Lua has div range between 30.5 to 32 but the answer on calculation comes between 27.5 to 29
-        assert (50 <= mid <= 52) and (27.5 < div < 29)
+        self.assertTrue((50 <= mid <= 52) and (27.5 < div < 29))
+
+if __name__ == '__main__':
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)
