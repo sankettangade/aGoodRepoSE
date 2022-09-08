@@ -6,7 +6,7 @@ This is an Assignment Repository for SE CSC 510 Course.
 ![GitHub](https://img.shields.io/github/license/sankettangade/aGoodRepoSE)
 ![GitHub contributors](https://img.shields.io/github/contributors/sankettangade/aGoodRepoSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sankettangade/aGoodRepoSE)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sankettangade/aGoodRepoSE/Build)
+<a href="https://github.com/sankettangade/aGoodRepoSE/actions" alt="Build Status"><img src="https://img.shields.io/github/workflow/status/sankettangade/aGoodRepoSE/Build" /></a>
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sankettangade/aGoodRepoSE/HW2%20Test%20Cases?label=hw2-test-cases)
 
 
