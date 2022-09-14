@@ -1,4 +1,3 @@
-import unittest
 s = __file__
 s = s[0:len(s)-19]
 s = s+"/lua"
@@ -7,9 +6,9 @@ sys.path.insert(1, s)
 import Num
 import The
 
-class TestBigNum(unittest.TestCase):
+class TestBigNum():
     
-    def testBigNum(self):
+   def testBigNum(self):
         num = Num.Num(0, "Numbers")
         The.The.cap = 32
 
@@ -17,10 +16,14 @@ class TestBigNum(unittest.TestCase):
             num.add(i)
         print(num.nums())
         print(len(num.nums()))
-        self.assertEqual(len(num.nums()),32,"Should be 32")
+        if(len(num.nums()) == 32):
+            return 0
+        else:
+            return 1
 
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    result = TestBigNum.testBigNum(1)
+    print(result)
 
     
