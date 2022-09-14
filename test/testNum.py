@@ -5,7 +5,6 @@ import sys
 sys.path.insert(1, s)
 import Num
 import The
-
 class TestNum:
 
     def testNum(self):
