@@ -9,7 +9,7 @@ class TestNum:
 
     def testNum(self):
         num = Num.Num(0, "Numbers")
-        The.The.cap = 100
+        The.cap = 100
 
         for i in range(1, 101):
             num.add(i)

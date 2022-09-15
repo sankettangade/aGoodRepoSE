@@ -10,7 +10,7 @@ class TestBigNum():
     
    def testBigNum(self):
         num = Num.Num(0, "Numbers")
-        The.The.cap = 32
+        The.cap = 32
 
         for i in range(0,1000):
             num.add(i)
