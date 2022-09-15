@@ -1,6 +1,7 @@
 import math
 import random
 import The
+import statistics
 
 class Num:
     def __init__(self, c:int, s:str):
@@ -8,8 +9,8 @@ class Num:
         self.at = c
         self.name = s
         self._has = []
-        self.lo = -math.inf
-        self.hi = math.inf
+        self.lo = math.inf
+        self.hi = -math.inf
         self.isSorted = True
 
 
@@ -20,20 +21,23 @@ class Num:
         return self._has.copy()
     
 
-    def add(self, v:int):
-        if v != "?":
-            self.n += 1
-            self.lo = min(v, self.lo)
-            self.hi = min(v, self.hi)
+    def add(self, v):
+        if v == "?":
+            v = (self.lo + self.hi)/2
+        v = int(v)
+        self.n += 1
+        self.lo = min(v, self.lo)
+        self.hi = max(v, self.hi)
 
-            if len(self._has) >= The.The.cap:
-                if random.randint(0,100) < 7 :
-                    pos = random.randint(0, len(self._has)-1)
-                    self._has[pos] = v
-            else:
-                self._has.append(v)
+        if len(self._has) >= The.cap:
+            if random.randint(0,100) < 7 :
+                pos = random.randint(0, len(self._has)-1)
+                self._has[pos] = v
+        else:
+            self._has.append(v)
 
-            self.isSorted = False
+        self.isSorted = False
+
 
 
     def div(self):
@@ -56,7 +60,6 @@ class Num:
             pos1 = int(len(has)/2 - 1)
             pos2 = int(len(has)/2)
             return (has[pos1]+has[pos2])/2
-
 
 if __name__ == "__main__":
     n = Num(0, "Numbers")
