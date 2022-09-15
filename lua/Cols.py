@@ -9,8 +9,8 @@ class Cols:
 		self.klass = None
 		self.x = {}
 		self.y = {}
-		for ele in names:
-			c,s = ele[0],ele[1]
+		for i in range(0,len(names)):
+			c,s = i,names[i]
 			# print(c,s)
 			self.all[s] = c
 
@@ -28,9 +28,3 @@ class Cols:
 			# If needed to classify independent and dependent for testing.
 			# elif(re.search("[!+−]",s)):
 			# 	self.x[s] = c
-
-
-
-
-
-
