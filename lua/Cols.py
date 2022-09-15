@@ -11,11 +11,10 @@ class Cols:
 		self.y = {}
 		for i in range(0,len(names)):
 			c,s = i,names[i]
-			# print(c,s)
 			self.all[s] = c
 
 			# Sorts the Num type here
-			if(s[0].isupper()):
+			if(s[0].isupper() and not re.search(":$",s)):
 				self.x[s] = c
 			# Sorts for the columns to be skipped
 			elif(re.search(":$",s)):
