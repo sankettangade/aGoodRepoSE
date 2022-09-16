@@ -1,4 +1,6 @@
 import re
+import Num
+import Sym
 
 class Cols:
 
@@ -11,19 +13,27 @@ class Cols:
 		self.y = {}
 		for i in range(0,len(names)):
 			c,s = i,names[i]
-			self.all[s] = c
-
-			# Sorts the Num type here
-			if(s[0].isupper() and not re.search(":$",s)):
-				self.x[s] = c
 			# Sorts for the columns to be skipped
-			elif(re.search(":$",s)):
-				continue
+			if(s[0].isupper()):
+				self.all[s] = [c,Num.Num(c,s)]
 			#Sorts the Sym type here
 			elif(s[0].islower()):
-				self.y[s] = c
-			# elif(re.search("!",s[-1])):
-			# 	self.klass[s] = c
-			# If needed to classify independent and dependent for testing.
-			# elif(re.search("[!+−]",s)):
-			# 	self.x[s] = c
+				self.all[s] = [c,Sym.Sym(c,s)]
+
+			if (not re.search(":$", s)):
+				if(re.search("[!+-]",s)):
+					print("In Y:", s)
+					self.y[s] = self.all[s]
+				else:
+					print("In X:", s)
+					self.x[s] = self.all[s]
+			if(re.search("!$",s)):
+				self.klass = self.all[s]
+
+
+# c = Cols(["Sahil","pracheet","Karan!","akhil+","Sanket:"])
+# print(c.all)
+# print(c.x)
+# print(c.y)
+# print(c.klass)
+# print(c.x.values()[0])

@@ -37,21 +37,21 @@ class Data:
             
             
         
-    def add_to_columns(self):
-        for col_name, col_index in self.cols.y.items():
-            s = Sym.Sym(col_name, col_index)
-            col_index = self.rows[0].index(col_name)
-            for i in range(1,len(self.rows)-1):
-                s.add(self.rows[i][col_index])
-            The.column_objects[col_name] = s
-            
-        for col_name, col_index in self.cols.x.items():
-            s = Num.Num(col_name, col_index)
-            col_index = self.rows[0].index(col_name)
-            for i in range(1,len(self.rows)-1):
-                # print((self.rows[i]))
-                s.add(self.rows[i][col_index])
-            The.column_objects[col_name] = s
+    # def add_to_columns(self):
+    #     for col_name, col_index in self.cols.y.items():
+    #         s = Sym.Sym(col_name, col_index)
+    #         col_index = self.rows[0].index(col_name)
+    #         for i in range(1,len(self.rows)-1):
+    #             s.add(self.rows[i][col_index])
+    #         The.column_objects[col_name] = s
+    #
+    #     for col_name, col_index in self.cols.x.items():
+    #         s = Num.Num(col_name, col_index)
+    #         col_index = self.rows[0].index(col_name)
+    #         for i in range(1,len(self.rows)-1):
+    #             # print((self.rows[i]))
+    #             s.add(self.rows[i][col_index])
+    #         The.column_objects[col_name] = s
 
     def print(self):
         print(self.rows)
@@ -70,6 +70,6 @@ class Data:
 
 
 
-a = Data("C:/Users/MSI/Desktop/ncsu/SE/HW1/aGoodRepoSE/data/lua_sample_data.csv")
+a = Data("../data/lua_sample_data.csv")
 
 print(a.stats(None, "div"))
