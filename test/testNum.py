@@ -5,6 +5,7 @@ import sys
 sys.path.insert(1, s)
 import Num
 import The
+
 class TestNum:
 
     def testNum(self):
@@ -28,3 +29,4 @@ class TestNum:
 if __name__ == '__main__':
         result = TestNum.testNum(1)
         print(result)
+
