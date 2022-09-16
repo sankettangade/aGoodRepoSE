@@ -10,7 +10,7 @@ class TestNum:
 
     def testNum(self):
         num = Num.Num(0, "Numbers")
-        The.The.cap = 100
+        The.cap = 100
 
         for i in range(1, 101):
             num.add(i)
@@ -29,3 +29,4 @@ class TestNum:
 if __name__ == '__main__':
         result = TestNum.testNum(1)
         print(result)
+
