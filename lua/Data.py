@@ -3,7 +3,7 @@ import Utils
 
 
 class Data:
-    def __init__(self, src) -> None:
+    def __init__(self, src = None) -> None:
         self.cols = None
         self.rows = []
         self.mapping = {}
