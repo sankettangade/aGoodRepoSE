@@ -3,6 +3,7 @@
 
 This is an Assignment Repository for SE CSC 510 Course.
 
+[![DOI](https://zenodo.org/badge/529009226.svg)](https://zenodo.org/badge/latestdoi/529009226)
 ![GitHub](https://img.shields.io/github/license/sankettangade/aGoodRepoSE)
 ![GitHub contributors](https://img.shields.io/github/contributors/sankettangade/aGoodRepoSE)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sankettangade/aGoodRepoSE)
