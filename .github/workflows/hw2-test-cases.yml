@@ -31,12 +31,15 @@ jobs:
         
     - name: HW2 - Testing Sym
       run: |
+        cd test
         python testSym.py
 
     - name: Hw2 - Testing Num
       run: |
+        cd test
         python testNum.py
       
     - name: Hw2 - Testing BigNum
       run: |
+        cd test
         python testBigNum.py
