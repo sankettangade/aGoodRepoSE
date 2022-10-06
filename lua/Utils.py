@@ -10,9 +10,9 @@ def csv(filename:str, data:object):
 
 def coerce(val):
     def fun(value):
-        if value == "true":
+        if value.lower() == "true":
             return True
-        if value == "false":
+        if value.lower() == "false":
             return False
         return value
     string = val.strip()

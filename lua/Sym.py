@@ -40,19 +40,19 @@ class Sym:
 
 
 # basic testing to check the working of the class
-if __name__ == "__main__":
-    s = Sym(0, "symbols")
-    s.add("1")
-    s.add("1")
-    s.add("1")
-    s.add("2")
-    s.add("2")
-    s.add("3")
-    s.add("3")
-    s.add("3")
-    s.add("3")
-    s.add("3")
-    print(s.mid())
-    print(s.div())
-    print(s._has)
+# if __name__ == "__main__":
+#     s = Sym(0, "symbols")
+#     s.add("1")
+#     s.add("1")
+#     s.add("1")
+#     s.add("2")
+#     s.add("2")
+#     s.add("3")
+#     s.add("3")
+#     s.add("3")
+#     s.add("3")
+#     s.add("3")
+#     print(s.mid())
+#     print(s.div())
+#     print(s._has)
 

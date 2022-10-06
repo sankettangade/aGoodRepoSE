@@ -3,8 +3,10 @@ import sys
 from Utils import coerce
 
 class Cli:
+    The = {}
     def __init__(self) -> None:
         self.The = {}
+        Cli.The = self.The
         self.help = """CSV : summarized csv file
         (c) 2022 Tim Menzies <timm@ieee.org> BSD-2 license
         USAGE: lua seen.lua [OPTIONS]
@@ -15,7 +17,7 @@ class Cli:
         -h  --help      show help                             = false
         -n  --nums      number of nums to keep                = 512
         -s  --seed      random number seed                    = 10019
-        -S  --seperator feild seperator                       = ,"""
+        -S  --seperator field seperator                       = ,"""
 
     def initialize_the(self):
         help = self.help
@@ -23,7 +25,6 @@ class Cli:
         dictre = re.findall(reexp, help)
         for key, value in dictre:
             self.The[key] = coerce(value)
-        print(self.The)
         return self.The
     
 
@@ -41,9 +42,6 @@ class Cli:
         if the['help'] == True:
             print(self.help)
             exit()
-        print(the)
+
         return the
 
-cli = Cli()
-the = cli.initialize_the()
-the = cli.update_the(the)
