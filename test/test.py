@@ -1,9 +1,6 @@
 import unittest
-s = __file__
-s = s[0:len(s)-13]
-s = s+"/code"
 import sys
-sys.path.insert(1,s)
+sys.path.insert(1, "../code")
 import main
 class TestCalculator(unittest.TestCase):
 
