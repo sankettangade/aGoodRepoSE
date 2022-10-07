@@ -18,6 +18,10 @@ jobs:
         coverage run testBigNum.py
         coverage run testNum.py
         coverage run testCsv.py
+        coverage report testSym.py
+        coverage report testBigNum.py
+        coverage report testNum.py
+        coverage report testCsv.py
         coverage xml
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
