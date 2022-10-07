@@ -15,12 +15,12 @@ jobs:
         pip install coverage
         cd test
         coverage run testSym.py
-        coverage run testBigNum.py
-        coverage run testNum.py
-        coverage run testCsv.py
         coverage report testSym.py
+        coverage run testBigNum.py
         coverage report testBigNum.py
+        coverage run testNum.py
         coverage report testNum.py
+        coverage run testCsv.py
         coverage report testCsv.py
         coverage xml
     - name: Upload coverage to Codecov
