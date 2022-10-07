@@ -63,7 +63,3 @@ class Data:
 
         return temp
 
-
-a = Data("../data/lua_sample_data.csv")
-# print(a.rows)
-print(a.stats(None, "div"))

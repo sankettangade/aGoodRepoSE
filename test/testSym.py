@@ -1,8 +1,5 @@
-s = __file__
-s = s[0:len(s)-16]
-s = s+"/lua"
 import sys
-sys.path.insert(1, s)
+sys.path.insert(1, "../lua")
 import Sym
 
 class TestSym:

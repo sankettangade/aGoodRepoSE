@@ -29,11 +29,3 @@ class Cols:
 					self.x[s] = self.all[s]
 			if(re.search("!$",s)):
 				self.klass = self.all[s]
-
-
-# c = Cols(["Sahil","pracheet","Karan!","akhil+","Sanket:"])
-# print(c.all)
-# print(c.x)
-# print(c.y)
-# print(c.klass)
-# print(c.x.values()[0])
